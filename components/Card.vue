@@ -25,12 +25,9 @@
         <h5 class="text-sm font-semibold text-cstPurple">
           Olivia Rhye • 1 Jan 2023
         </h5>
-        <NuxtLink
-          to="/"
-          class="flex justify-between transition-all ease-in-out duration-300 hover:scale-105"
-        >
+        <NuxtLink to="/" class="flex justify-between">
           <h2
-            class="font-semibold text-cstBlack break-words"
+            class="font-semibold text-cstBlack break-words transition-all ease-in-out duration-300 hover:text-cstPurple"
             :class="{
               'text-2xl': layout === 'vertical' || layout === 'horizontal-long',
               'text-lg': layout === 'horizontal',
