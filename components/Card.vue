@@ -27,7 +27,7 @@
         </h5>
         <NuxtLink to="/" class="flex justify-between">
           <h2
-            class="font-semibold text-cstBlack break-words transition-all ease-in-out duration-300 hover:text-cstPurple"
+            class="font-semibold text-cstBlack break-words transition-all hover:text-cstPurple"
             :class="{
               'text-2xl': layout === 'vertical' || layout === 'horizontal-long',
               'text-lg': layout === 'horizontal',
