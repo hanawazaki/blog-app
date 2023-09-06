@@ -98,9 +98,9 @@ const truncateDesc = (text) => {
 
 const gridSetClass = computed(() => {
   return {
-    "flex-col gap-8 max-h-[432px]": props.layout == "vertical",
+    "flex-col gap-8 max-h-[432px] mb-8": props.layout == "vertical",
     "flex-row gap-6 max-h-[200px]": props.layout === "horizontal",
-    "flex-row gap-8 max-h-[432px] justify-between":
+    "flex-row gap-8 max-h-[432px] justify-between py-[30px]":
       props.layout === "horizontal-long",
   };
 });

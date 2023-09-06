@@ -25,6 +25,21 @@
         </div>
       </div>
     </section>
+    <section class="all-post mt-8">
+      <div class="mx-auto max-w-7xl px-10">
+        <h1 class="mb-8 text-2xl font-semibold">All blog posts</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <Card
+            layout="vertical"
+            gridSet="max-lg:col-span-2"
+            v-for="data in 6"
+            :key="data"
+          />
+        </div>
+      </div>
+    </section>
+    <Pagination />
+    <Footer />
   </div>
 </template>
 
