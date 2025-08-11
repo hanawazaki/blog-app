@@ -1,11 +1,16 @@
 <template>
-  <div class="flex h-full" :class="[layoutClass, gridSetClass]">
+  <div
+    class="flex max-[640px]:flex-col md:flex-row h-full"
+    :class="[layoutClass, gridSetClass]"
+  >
+    <!-- image -->
     <div
       class="image-container w-full"
       :class="{
-        'w-6/12 max-h-[200px] max-w-[320px]': layout === 'horizontal',
+        'w-full md:w-6/12 max-h-[200px] max-w-[320px]': layout === 'horizontal',
         'max-h-[228px] max-w-[592px]': layout === 'vertical',
-        'w-6/12 max-h-[228px] max-w-[592px]': layout === 'horizontal-long',
+        'w-full md:w-6/12 max-h-[228px] max-w-[592px]':
+          layout === 'horizontal-long',
       }"
     >
       <img
@@ -14,6 +19,8 @@
         class="h-full w-full object-cover"
       />
     </div>
+    <!--  -->
+    <!-- content -->
     <div
       class="card-content flex flex-col gap-6 justify-between"
       :class="{
@@ -25,11 +32,12 @@
         <h5 class="text-sm font-semibold text-cstPurple">
           Olivia Rhye • 1 Jan 2023
         </h5>
-        <NuxtLink to="/" class="flex justify-between">
+        <NuxtLink :to="`/post/${id}`" class="flex justify-between">
           <h2
             class="font-semibold text-cstBlack break-words transition-all hover:text-cstPurple"
             :class="{
-              'text-2xl': layout === 'vertical' || layout === 'horizontal-long',
+              'text-2xl leading-[32px]':
+                layout === 'vertical' || layout === 'horizontal-long',
               'text-lg': layout === 'horizontal',
             }"
           >
@@ -41,7 +49,7 @@
           </h2>
           <img src="../assets/images/arrow-up-right.svg" alt="arrow" />
         </NuxtLink>
-        <p class="text-base font-normal text-cstGray">
+        <p class="text-base font-normal leading-6 text-cstGray">
           {{
             layout === "vertical" || layout === "horizontal-long"
               ? textDesc
@@ -64,6 +72,7 @@
         >
       </div>
     </div>
+    <!--  -->
   </div>
 </template>
 

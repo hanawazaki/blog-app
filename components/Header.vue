@@ -17,7 +17,11 @@
           class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-between"
         >
           <div class="flex flex-shrink-0 items-center">
-            <h1 class="text-xl font-semibold text-cstBlack">My Blog</h1>
+            <h1
+              class="md:text-lg leading-6 lg:text-xl font-semibold text-cstBlack"
+            >
+              My Blog
+            </h1>
           </div>
           <div class="hidden sm:ml-6 sm:block">
             <div class="flex space-x-4">
@@ -29,7 +33,7 @@
                   item.current
                     ? 'font-semibold text-cstBlack'
                     : 'text-gray-300 hover:text-cstBlack hover:font-semibold',
-                  'rounded-md px-3 py-2 text-sm md:text-xl ',
+                  'rounded-md px-3 py-2 text-lg md:text-xl',
                 ]"
                 :aria-current="item.current ? 'page' : undefined"
                 >{{ item.name }}</a

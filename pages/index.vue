@@ -1,10 +1,12 @@
 <template>
   <div>
     <Header />
-    <section class="mt-[50px] pb-7 hero mx-auto max-w-7xl px-10">
-      <div class="container border-cstBlack border-t border-b">
+    <section
+      class="mt-[50px] pb-7 hero mx-auto max-w-7xl px-3 lg:px-6 xl:px-10"
+    >
+      <div class="w-full mx-auto border-cstBlack border-t border-b">
         <h1
-          class="text-[243.8px] leading-normal tracking-tight text-cstBlack font-bold"
+          class="text-center max-[386px]:text-5xl max-[810px]:text-7xl max-md:text-8xl md:text-[160px] md:text-red-500 xl:text-blue-500 xl:text-[244px] tracking-tight text-cstBlack font-bold"
         >
           THE BLOG
         </h1>
@@ -12,8 +14,10 @@
     </section>
     <section class="recent-post mt-7">
       <div class="mx-auto max-w-7xl px-10">
-        <h1 class="mb-8 text-2xl font-semibold">Recent blog posts</h1>
-        <div class="grid grid-cols-2 grid-rows-2 gap-8">
+        <h1 class="mb-8 text-2xl font-semibold">
+          Recent blog postsssssssssssssss
+        </h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 md:gap-8">
           <Card
             layout="vertical"
             gridSet="row-span-2 col-span-2 lg:col-span-1"

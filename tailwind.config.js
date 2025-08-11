@@ -28,6 +28,9 @@ module.exports = {
         'cstSeaBlue': '#026AA2',
         'cstLSeaBlue': '#F0F9FF'
       },
+      screens: {
+        'md': '834px'
+      }
     },
   },
   plugins: [],
