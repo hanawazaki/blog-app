@@ -79,7 +79,7 @@
               >
                 <div class="flex items-center gap-2">
                   <img
-                    src="../../assets/images/author-avatar.jpg"
+                    src="../../assets/images/user.png"
                     alt="Author"
                     class="w-8 h-8 rounded-full object-cover"
                     @error="handleImageError"
