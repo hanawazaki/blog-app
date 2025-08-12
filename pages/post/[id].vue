@@ -142,7 +142,7 @@
                 <figure class="my-6 sm:my-8">
                   <div class="relative overflow-hidden rounded-lg">
                     <img
-                      src="../../assets/images/image.png"
+                      src="../../assets/images/Image.png"
                       alt="Grid system example"
                       class="w-full h-auto transition-transform duration-300 hover:scale-102"
                       loading="lazy"
